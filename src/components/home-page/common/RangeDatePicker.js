@@ -7,7 +7,7 @@ import {
   InputGroupText
 } from "shards-react";
 
-import "../../assets/styles/range-date-picker.css";
+import "../../../assets/styles/range-date-picker.css";
 
 class RangeDatePicker extends React.Component {
   constructor(props) {

@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Container, Row, Col } from "shards-react";
 
-import Navbar from "../components/Navbar";
+import NavbarHomePage from "../components/dashboard/Navbar";
 import Footer from "../components/Footer";
 
 const DefaultLayout = ({ children, noNavbar, noFooter }) => (
@@ -15,7 +15,7 @@ const DefaultLayout = ({ children, noNavbar, noFooter }) => (
         sm="12"
         tag="main"
       >
-        {!noNavbar && <Navbar />}
+        {!noNavbar && <NavbarHomePage />}
         {children}
         {!noFooter && <Footer />}
       </Col>
