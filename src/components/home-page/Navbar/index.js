@@ -1,10 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { MdSearch } from 'react-icons/md'
 import classNames from "classnames";
-import { Container, Navbar, Nav, NavbarBrand, NavbarToggler } from "shards-react";
+import { Container, Navbar, Row, Col, Button, InputGroup, FormInput, InputGroupAddon, InputGroupText } from "shards-react";
+
 
 import "./styles.css";
-
 
 const NavbarHomePage = ({ stickyTop }) => {
   const classes = classNames(
@@ -16,9 +17,27 @@ const NavbarHomePage = ({ stickyTop }) => {
 
   return (
     <div className={classes}>
-      <Container className="p-0 rounded">
-        <Navbar type="light"  className="align-items-stretch rounded flex-md-nowrap p-0">
+      <Container >
+        <Navbar type="light"  className="d-flex align-items-center">
+          <Row>
+            <Col className="text-center"  >
 
+            </Col>
+            <Col className="col-search"  >
+              <InputGroup size="sm" fluid seamless>
+                <InputGroupAddon type="prepend">
+                  <InputGroupText >
+                    <i className="material-icons">search</i>
+                  </InputGroupText>
+                </InputGroupAddon>
+                <FormInput />
+              </InputGroup>
+            </Col>
+            <Col className="d-flex justify-content-around d-flex align-items-center" >
+              <Button href="/signin" size="sm" >Sign In</Button>
+              <Button href="/signup" size="sm" >Sign Up</Button>
+            </Col>
+          </Row>
         </Navbar>
       </Container>
     </div>
@@ -26,10 +45,7 @@ const NavbarHomePage = ({ stickyTop }) => {
 };
 
 NavbarHomePage.propTypes = {
-  // The layout type where the Navbar is used.
   layout: PropTypes.string,
-
-  // Whether the main navbar is sticky to the top, or not.
   stickyTop: PropTypes.bool
 };
 

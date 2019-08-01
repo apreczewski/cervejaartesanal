@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Container, Row, Nav, NavItem, NavLink } from "shards-react";
-import { Link } from "react-router-dom";
+import { Container, Row } from "shards-react";
+
 import classNames from "classnames";
 
 
-const MainFooter = ({ contained, menuItems, copyright }) => {
+const MainFooter = ({ contained, copyright }) => {
   const classes = classNames(
     "main-navbar",
     "bg-white",
@@ -45,7 +45,7 @@ MainFooter.defaultProps = {
   copyright: "Copyright © 2019 Cerveja Artesanal Net",
   menuItems: [
     {
-      title: "Home",
+      title: "HomePage",
       to: "#"
     },
     {

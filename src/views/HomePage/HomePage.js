@@ -11,7 +11,7 @@ import {
 } from "shards-react";
 
 import LayoutDefault from './LayoutDefault';
-import PageTitle from "../../components/home-page/common/PageTitle";
+import PageTitle from "../../components/default/common/PageTitle";
 import PostOne from "../../components/home-page/post/PostOne";
 
 class HomePage extends React.Component {

@@ -1,4 +1,4 @@
-import Chart from './chart';
+import Chart from 'chart.js';
 
 Chart.defaults.LineWithLine = Chart.defaults.line;
 Chart.controllers.LineWithLine = Chart.controllers.line.extend({
